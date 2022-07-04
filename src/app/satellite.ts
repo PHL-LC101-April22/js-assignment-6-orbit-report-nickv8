@@ -22,13 +22,7 @@ export class Satellite {
 			return false;
 		}
 		}
-		
-		// for (let key in Satellite) {
-		// 	if(Satellite[key] === "Space Debris"){
-		// 	return true;
-		// } 
-		// }
-		
+			
    }
 
 
