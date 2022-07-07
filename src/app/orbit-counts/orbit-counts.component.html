@@ -1,12 +1,9 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
 	<div>Total: <span class="counts-total">{{satellites.length}}</span></div>
-	<!-- bonus mission add displayed satellite type list 7/3/22-->
-	<!-- maybe make this a table instead of a div and ul 7/3/22 -->
-	<div *ngIf="satellites.length > 0">
-		<ul>
-			<li *ngFor="let satellite of satellites">{{satellite.type}}<span>Fix Code</span></li>
-		</ul>
+	
+	<div *ngFor="let satellite of satellites">
+		<div>{{satellite.type}}:<span>{{countByType(satellite.type)}}</span></div>
 	</div>
 	
 </div>
